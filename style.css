@@ -87,9 +87,43 @@ ul {
     font-weight: 300;
   }
 }
-.hero figure img {
+.hero img {
   margin-top: 30px;
   width: 250px;
   height: 250px;
 }
+/* .section-footer img {
+  width: 250px;
+  height: 250px;
+  margin-top: 88px;
+} */
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #141c3a;
+  color: white;
+  padding-bottom: 16rem;
+}
+
+.hero2-content {
+  margin-top: 7.5rem;
+  width: 50%;
+  h1 {
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 25px;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 34px;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+  }
+}
+
 /************END HERO****************/
