@@ -89,26 +89,25 @@ ul {
 }
 .hero img {
   margin-top: 30px;
+  border-radius: 50%;
+  object-fit: contain;
   width: 250px;
   height: 250px;
 }
-/* .section-footer img {
-  width: 250px;
-  height: 250px;
-  margin-top: 88px;
-} */
+
+/*************Section 2*********/
 .section2 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #141c3a;
+  background-color: #6e07f3;
   color: white;
   padding-bottom: 16rem;
 }
 
 .hero2-content {
-  margin-top: 7.5rem;
+  margin-top: 9.5rem;
   width: 50%;
   h1 {
     margin-bottom: 20px;
@@ -125,5 +124,206 @@ ul {
     font-weight: 300;
   }
 }
+/*************Section 2*********/
+
+/*************Section 3*********/
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 20px; /* Add padding to section for spacing */
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -9.6rem;
+  gap: 6px;
+}
+.card {
+  box-shadow: 0px 5px 10px #939393;
+  background-color: white;
+  padding: 40px;
+  max-width: 400px;
+  box-sizing: border-box;
+  height: 100vh;
+  border-radius: 10px;
+
+  h2,
+  h3,
+  p {
+    font-family: "Montserrat", sans-serif;
+  }
+  h2 {
+    margin: 20px 0px;
+    color: #141c3a;
+  }
+  h3 {
+    font-weight: 700;
+    margin: 20px 0px 15px 0px;
+    color: #6e07f3;
+    font-size: 1rem;
+  }
+  p {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #141c3a;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+
+    svg {
+      width: 30px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .enjoy {
+    margin: 35px 0px;
+  }
+  .list-title {
+    font-weight: 700;
+    margin-bottom: 26px;
+    color: #6e07f3;
+  }
+  ul li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #5b5b5b;
+  }
+}
+.card > p {
+  line-height: 25px;
+}
+/*************Section 3*********/
+
+/*************Section 4*********/
+.section4 {
+  text-align: center;
+  margin-top: 6rem;
+  padding-bottom: 16rem;
+
+  h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    a {
+      text-decoration: none;
+      color: #6e07f3;
+    }
+  }
+}
+/*************Section 4*********/
 
 /************END HERO****************/
+/* Base styles remain unchanged */
+
+/* Media Queries for responsiveness */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem; /* Adjust for smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 1.2rem; /* Adjust for smaller screens */
+  }
+
+  .hero img {
+    width: 200px; /* Smaller avatar */
+    height: 200px;
+  }
+
+  .section2 {
+    padding-bottom: 10rem; /* Reduce padding */
+  }
+
+  .hero2-content {
+    width: 90%; /* Take up more width on smaller screens */
+  }
+
+  .wrapper {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 10px 0;
+    height: 50vh;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between; /* Space between items */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Adjust font size */
+  }
+
+  .hero-content p {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .hero img {
+    width: 220px; /* Slightly larger avatar */
+    height: 220px;
+  }
+
+  .hero2-content {
+    width: 70%; /* Adjust width for medium screens */
+  }
+
+  .wrapper {
+    flex-wrap: wrap; /* Allow cards to wrap */
+  }
+
+  .card {
+    max-width: 300px; /* Max width for cards */
+  }
+}
+
+/* Larger devices */
+@media (min-width: 1025px) {
+  .wrapper {
+    justify-content: space-between; /* Evenly space cards */
+  }
+
+  .hero-content h1 {
+    font-size: 3rem; /* Larger font size */
+  }
+
+  .hero-content p {
+    font-size: 1.75rem; /* Larger font size */
+  }
+
+  .hero img {
+    width: 250px; /* Original avatar size */
+    height: 250px;
+  }
+}
