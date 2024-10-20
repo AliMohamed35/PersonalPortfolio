@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 /************Start nav**************/
 nav {
@@ -148,7 +149,7 @@ ul {
   padding: 40px;
   max-width: 400px;
   box-sizing: border-box;
-  height: 100vh;
+
   border-radius: 10px;
 
   h2,
@@ -205,6 +206,18 @@ ul {
     font-weight: 600;
     color: #5b5b5b;
   }
+  .free-work {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+
+    a {
+      text-decoration: none;
+      color: #6e07f3;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+    }
+  }
 }
 .card > p {
   line-height: 25px;
@@ -213,26 +226,76 @@ ul {
 
 /*************Section 4*********/
 .section4 {
-  text-align: center;
-  margin-top: 6rem;
-  padding-bottom: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the section content */
+  padding: 40px 0; /* Adjust padding as needed */
 
-  h3 {
-    font-family: "Oswald", sans-serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
   p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-
-    a {
-      text-decoration: none;
-      color: #6e07f3;
-    }
+    margin-bottom: 20px; /* Space below the paragraph */
+    text-align: center; /* Center text */
+    width: 75%;
   }
 }
+
+h3 {
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between the items */
+  justify-items: center; /* Center items in the grid */
+  margin-bottom: 3rem;
+}
+
+.item {
+  background-color: #f0f0f0; /* Example background */
+  text-align: center; /* Center text */
+  border: 1px solid #ccc; /* Example border */
+  width: 300px; /* Set width */
+  height: 300px; /* Set height */
+  display: flex; /* Use flex to center content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  transition: transform 0.3s; /* Add a hover effect */
+}
+
+.item:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.git-btn a {
+  text-decoration: none;
+}
+
+.git-btn a button {
+  padding: 20px 50px;
+  background-color: transparent;
+  color: #6e07f3;
+  border: 2px solid #6e07f3;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.git-btn button:hover {
+  background-color: #6e07f3;
+  color: white; /* Darker shade on hover */
+}
+.git-btn:hover a {
+  color: inherit;
+}
+
 /*************Section 4*********/
 
 /************END HERO****************/
@@ -271,7 +334,7 @@ ul {
   .card {
     max-width: 90%;
     margin: 10px 0;
-    height: 50vh;
+    height: fit-content;
   }
 }
 
@@ -325,5 +388,19 @@ ul {
   .hero img {
     width: 250px; /* Original avatar size */
     height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .work {
+    grid-template-columns: 2fr; /* 1 column on small screens */
+  }
+  .item {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .work {
+    grid-template-columns: 1fr; /* 1 column on small screens */
   }
 }
