@@ -74,7 +74,7 @@ ul {
     margin-bottom: 25px;
 
     span {
-      color: var(--color2);
+      color: gray;
     }
   }
   p {
