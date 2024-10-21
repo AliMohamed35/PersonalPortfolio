@@ -4,10 +4,6 @@
 /* font-family: "Outfit", sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 /* font-family: "Oswald", sans-serif; */
-:root {
-  --color1: black;
-  --color2: rgb(105, 105, 105);
-}
 * {
   margin: 0;
   padding: 0;
@@ -96,7 +92,7 @@ ul {
   height: 250px;
 }
 
-/*************Section 2*********/
+/*************2*********/
 .section2 {
   display: flex;
   justify-content: center;
@@ -106,7 +102,6 @@ ul {
   color: white;
   padding-bottom: 16rem;
 }
-
 .hero2-content {
   margin-top: 9.5rem;
   width: 50%;
@@ -125,9 +120,9 @@ ul {
     font-weight: 300;
   }
 }
-/*************Section 2*********/
+/*************2*********/
 
-/*************Section 3*********/
+/*************3*********/
 .section3 {
   display: flex;
   justify-content: center;
@@ -222,26 +217,27 @@ ul {
 .card > p {
   line-height: 25px;
 }
-/*************Section 3*********/
+/*************3*********/
 
-/*************Section 4*********/
+/*************4*********/
 .section4 {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center the section content */
   padding: 40px 0; /* Adjust padding as needed */
+  box-shadow: 0px 7px 9px #0000000a;
 
   p {
     margin-bottom: 20px; /* Space below the paragraph */
     text-align: center; /* Center text */
     width: 75%;
+    font-family: "Montserrat", sans-serif;
   }
 }
-
 h3 {
-  margin-bottom: 10px; /* Space below the heading */
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
 }
-
 .work {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -249,7 +245,6 @@ h3 {
   justify-items: center; /* Center items in the grid */
   margin-bottom: 3rem;
 }
-
 .item {
   background-color: #f0f0f0; /* Example background */
   text-align: center; /* Center text */
@@ -261,15 +256,12 @@ h3 {
   justify-content: center; /* Center horizontally */
   transition: transform 0.3s; /* Add a hover effect */
 }
-
 .item:hover {
   transform: scale(1.05); /* Slightly scale up on hover */
 }
-
 .git-btn a {
   text-decoration: none;
 }
-
 .git-btn a button {
   padding: 20px 50px;
   background-color: transparent;
@@ -295,13 +287,203 @@ h3 {
 .git-btn:hover a {
   color: inherit;
 }
+/*************4*********/
 
-/*************Section 4*********/
+/*************5*********/
+.section5 {
+  text-align: center;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-/************END HERO****************/
-/* Base styles remain unchanged */
+  .work {
+    margin-top: 3rem;
 
-/* Media Queries for responsiveness */
+    .item {
+      background-color: #f0f0f0; /* Example background */
+      text-align: center; /* Center text */
+      border: 1px solid #ccc; /* Example border */
+      width: 300px; /* Set width */
+      height: 150px; /* Set height */
+      display: flex; /* Use flex to center content */
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+    }
+  }
+  h3 {
+    font-family: "Oswald", sans-serif;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+/*************5*********/
+
+/*************6*********/
+.section6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #6e07f3;
+  color: white;
+  padding-bottom: 16rem;
+
+  .hero6-content {
+    margin-top: 5.5rem;
+    width: 50%;
+    h1 {
+      margin-bottom: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 34px;
+      color: white;
+      font-family: "Outfit", sans-serif;
+      font-weight: 300;
+    }
+  }
+}
+/*************6*********/
+
+/*************7*********/
+.section7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  padding: 20px; /* Add padding to section for spacing */
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -9.6rem;
+  gap: 6px;
+}
+.card {
+  box-shadow: -3px 5px 10px #939393;
+  background-color: white;
+  padding: 40px;
+  max-width: 400px;
+  box-sizing: border-box;
+  height: fit-content;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  p {
+    font-weight: 500;
+    color: #141c3a;
+  }
+  img {
+    width: 180px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+}
+.card > p {
+  line-height: 25px;
+}
+.label {
+  background-color: #ebf5ff;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  a {
+    color: #0068d1;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+  }
+}
+.label2 {
+  background-color: #feecf0;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: wait;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+  a {
+    color: #d54545;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    cursor: wait;
+  }
+}
+.box {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    font-family: "Oswald", sans-serif;
+  }
+  p {
+    margin-bottom: 2rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .conv-btn button {
+    padding: 20px 50px;
+    background-color: transparent;
+    color: #6e07f3;
+    border: 2px solid #6e07f3;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .conv-btn button:hover {
+    background-color: #6e07f3;
+    color: white; /* Darker shade on hover */
+  }
+}
+/*************7*********/
+/************END****************/
 
 /* Mobile devices */
 @media (max-width: 768px) {
