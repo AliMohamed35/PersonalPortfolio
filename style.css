@@ -98,7 +98,7 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #6e07f3;
+  background-color: black;
   color: white;
   padding-bottom: 16rem;
 }
@@ -369,7 +369,7 @@ h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #6e07f3;
+  background-color: black;
   color: white;
   padding-bottom: 16rem;
 
@@ -402,6 +402,7 @@ h3 {
   flex-direction: column;
   text-align: center;
   color: black;
+  margin-bottom: 5rem;
   padding: 20px; /* Add padding to section for spacing */
 }
 .wrapper {
@@ -480,46 +481,6 @@ h3 {
     cursor: wait;
   }
 }
-.box {
-  margin-top: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h3 {
-    font-family: "Oswald", sans-serif;
-  }
-  p {
-    margin-bottom: 20px; /* Space below the paragraph */
-    text-align: center; /* Center text */
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #141c3a;
-  }
-  .conv-btn button {
-    padding: 20px 50px;
-    background-color: transparent;
-    color: #6e07f3;
-    border: 2px solid #6e07f3;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    svg {
-      width: 15px;
-      height: 15px;
-    }
-  }
-  .conv-btn button:hover {
-    background-color: #6e07f3;
-    color: white; /* Darker shade on hover */
-  }
-}
 /*************7*********/
 
 /*************8*********/
@@ -530,7 +491,7 @@ h3 {
   justify-content: center;
 
   .start {
-    background-color: #141c3a;
+    background-color: black;
     width: 80%;
     color: white;
     display: grid;
@@ -578,14 +539,45 @@ h3 {
 
 /*************FOOTER*********/
 footer {
-  background-color: #6e07f3;
   margin-bottom: 0;
   text-align: center;
+  box-shadow: 0px 3px 10px black;
 
   padding: 20px;
 
   .footer-content {
     margin: 3rem;
+
+    p {
+      font-family: "Outfit", sans-serif;
+      font-size: 1.2rem;
+      line-height: 3rem;
+      font-weight: 500;
+    }
+
+    .circles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 1rem;
+
+      .ball {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #5be9b9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s ease;
+
+        &:hover {
+          background-color: #5be9b9;
+          border: 2px solid black;
+        }
+      }
+    }
   }
 }
 /*************FOOTER*********/
