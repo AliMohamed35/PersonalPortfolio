@@ -1,3 +1,4 @@
+/* General Reset and Styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +12,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #f4f4f9;
+  padding: 20px;
 }
 
 .contact-form-container {
@@ -18,19 +20,23 @@ body {
   width: 100%;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  transition: max-width 0.3s ease;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 
 .contact-form label {
   display: block;
   font-weight: bold;
   margin-top: 15px;
+  font-size: 1rem;
+  color: #333;
 }
 
 .contact-form input,
@@ -41,16 +47,24 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5c67f2;
+  outline: none;
 }
 
 .contact-form button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-top: 20px;
   border: none;
   background-color: #5c67f2;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
@@ -64,7 +78,62 @@ h1 {
 .response-message {
   margin-top: 20px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   color: #5c67f2;
-  display: none;
+  visibility: hidden;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-form-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-container {
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 0.85rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+  }
+
+  .contact-form button {
+    padding: 8px;
+  }
+
+  .response-message {
+    font-size: 0.85rem;
+  }
 }
