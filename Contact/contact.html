@@ -4,45 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
-    <!-- CSS link -->
+    <title>Contact Form</title>
     <link rel="stylesheet" href="style2.css">
-    <!-- CSS link -->
-
-    <!-- Font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Font awesome CDN -->
-
-    <!-- Box-Icon CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
-        integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Box-Icon CDN -->
-
-    <title>Ali Mohamed | Desinger, Frontend developer</title>
 </head>
 
 <body>
-    <!-- NAVIGATION -->
-    <nav aria-label="Main Navigation">
-        <!-- LOGO -->
-        <figure>
-            <img src="../images/Logo.png" width="75px" height="75px" alt="LOGO" style="cursor: pointer;">
-            <!--To be added -->
-        </figure>
-        <!-- LOGO -->
-    </nav>
-    <!-- NAVIGATION -->
+    <div class="contact-form-container">
+        <h1>Contact Me</h1>
+        <form id="contactForm" class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
 
-    <main>
-        <div class="pico">
-            <img src="../images/Me.jpg" alt="">
-        </div>
-    </main>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="responseMessage" class="response-message"></div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -1,31 +1,70 @@
 * {
-  padding: 0px;
-  margin: 0px;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 0.625rem 0rem 0.625rem 0rem;
-  box-shadow: 0rem 0.5rem 0.875rem #e3e3e3;
 
-  img {
-    margin-left: 10rem;
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
 }
-.pico img {
-  margin-top: -3rem;
-  border-radius: 50%;
-  object-fit: contain;
-  width: 150px;
-  height: 150px;
-  border: 3px solid #6e07f3;
-  padding: 3px;
-  background-color: white;
+
+.contact-form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: #5c67f2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #4a53d2;
+}
+
+.response-message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #5c67f2;
+  display: none;
 }
